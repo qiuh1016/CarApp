@@ -59,10 +59,13 @@ class carSelectViewController: UITableViewController {
         switch indexPath.section {
         case 0:
             textLabel.text = shangqidazhong[indexPath.row]
+            imageView.image = UIImage(named: shangqidazhong[indexPath.row])
         case 1:
             textLabel.text = yiqidazhong[indexPath.row]
+            imageView.image = UIImage(named: yiqidazhong[indexPath.row])
         case 2:
             textLabel.text = jinkoudazhong[indexPath.row]
+            imageView.image = UIImage(named: jinkoudazhong[indexPath.row])
         default:
             break
         }
@@ -84,6 +87,9 @@ class carSelectViewController: UITableViewController {
         }
     }
  
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
 
     /*
     // Override to support conditional editing of the table view.

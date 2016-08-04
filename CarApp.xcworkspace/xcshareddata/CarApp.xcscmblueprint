@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "98c33635-c380-8444-a562-3ce4fb997d48++2784",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D38918B7ADE23EEC9ED59B48B0E2308F5F8EC142",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "98c33635-c380-8444-a562-3ce4fb997d48++2784" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "98c33635-c380-8444-a562-3ce4fb997d48++2784" : 0
+    "98c33635-c380-8444-a562-3ce4fb997d48++2784" : 0,
+    "D38918B7ADE23EEC9ED59B48B0E2308F5F8EC142" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "88FBBD7E-41E4-49F8-A719-AFB5659DB2A4",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "98c33635-c380-8444-a562-3ce4fb997d48++2784" : "HaoShiMap\/"
+    "98c33635-c380-8444-a562-3ce4fb997d48++2784" : "HaoShiMap\/",
+    "D38918B7ADE23EEC9ED59B48B0E2308F5F8EC142" : "CarApp\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "CarApp",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/121.40.212.195\/svn\/2015DK009",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "98c33635-c380-8444-a562-3ce4fb997d48++2784"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/qiuh1016\/CarApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D38918B7ADE23EEC9ED59B48B0E2308F5F8EC142"
     }
   ]
 }

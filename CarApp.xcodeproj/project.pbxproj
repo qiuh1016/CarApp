@@ -35,6 +35,7 @@
 		B997C56D1CBFE88C00BB4462 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997C56C1CBFE88C00BB4462 /* HudView.swift */; };
 		B9AC6E6B1CC0C8EC00ABD9BC /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = B9AC6E6A1CC0C8EC00ABD9BC /* podfile */; };
 		B9AC6E8F1CC3DF1000ABD9BC /* imageOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AC6E8E1CC3DF1000ABD9BC /* imageOrientation.m */; };
+		B9B8569E1D539818003DF3C4 /* Car_DaZhong.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B8569D1D539818003DF3C4 /* Car_DaZhong.xcassets */; };
 		B9F76B431D53438A00C1B2F6 /* carSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F76B421D53438A00C1B2F6 /* carSelectViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		B9AC6E6A1CC0C8EC00ABD9BC /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = podfile; path = ../podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B9AC6E8D1CC3DF1000ABD9BC /* imageOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageOrientation.h; sourceTree = "<group>"; };
 		B9AC6E8E1CC3DF1000ABD9BC /* imageOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageOrientation.m; sourceTree = "<group>"; };
+		B9B8569D1D539818003DF3C4 /* Car_DaZhong.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Car_DaZhong.xcassets; sourceTree = "<group>"; };
 		B9F76B421D53438A00C1B2F6 /* carSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carSelectViewController.swift; sourceTree = "<group>"; };
 		E87DE03C2F0E9B32D22AED61 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -168,6 +170,7 @@
 			children = (
 				B997C5431CBFA7A500BB4462 /* Assets.xcassets */,
 				B91E929B1D53377100A477AC /* CarBrand.xcassets */,
+				B9B8569D1D539818003DF3C4 /* Car_DaZhong.xcassets */,
 				B997C5451CBFA7A500BB4462 /* LaunchScreen.storyboard */,
 				B91B1A0E1D51776C007BC01B /* CarApp.xcdatamodeld */,
 				B997C5481CBFA7A500BB4462 /* Info.plist */,
@@ -273,6 +276,7 @@
 				B9AC6E6B1CC0C8EC00ABD9BC /* podfile in Resources */,
 				B91E929C1D53377100A477AC /* CarBrand.xcassets in Resources */,
 				B997C53F1CBFA7A500BB4462 /* Main.storyboard in Resources */,
+				B9B8569E1D539818003DF3C4 /* Car_DaZhong.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +469,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0354FF071BA7FD649C017CC8 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-red";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -486,7 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5539286368269CBB24DD144D /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-red";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
