@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (3.3.1)
+  - AMPopTip (0.10.2)
+  - DisplaySwitcher (0.1.0)
+  - JSPatch (1.0):
+    - JSPatch/Core (= 1.0)
+  - JSPatch/Core (1.0)
+  - Just (0.4.7)
+  - MJRefresh (3.1.0)
+  - pop (1.0.9)
+  - SDCycleScrollView (1.62):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - Shimmer (1.0.2)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - AMPopTip
+  - DisplaySwitcher (~> 0.1.0)
+  - JSPatch
+  - Just
+  - MJRefresh
+  - pop (~> 1.0)
+  - SDCycleScrollView (~> 1.61)
+  - Shimmer
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  AMPopTip: 0788a9452806049e3aa0d6d09324606fc41ea646
+  DisplaySwitcher: 6a12f27033ffbbe5a533971380a8aee7d291f0df
+  JSPatch: c689ea4dde17441f2f4a95d40dfedb8900c20099
+  Just: 946bae197f898da6b49e27e10dbe9dfbf1216f29
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SDCycleScrollView: ae016cb4cc4036523917f146ede6f7b11d408f6a
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
