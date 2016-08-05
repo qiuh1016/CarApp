@@ -13,8 +13,8 @@ import Shimmer
 class detailViewController: UIViewController {
 
     
-    var titleText = "店家资讯"
-    var titleLabelText = "米粉汤大娘"
+    var titleText = "资讯消息"
+    var titleLabelText = "数说全新克鲁兹：美式气质／价格满意度低"
     var detailText = "据中国地震局消息，4月19日1时10分在北京房山区(塌陷)(北纬39.9度、东经115.8度)发生2.7级地震，震源深度0公里。"
     var storyText = "据中国地震局消息，4月19日1时10分在北京房山区(塌陷)(北纬39.9度、东经115.8度)发生2.7级地震，震源深度0公里。据中国地震局消息，4月19日1时10分在北京房山区(塌陷)(北纬39.9度、东经115.8度)发生2.7级地震，震源深度0公里。据中国地震局消息，4月19日1时10分在北京房山区(塌陷)(北纬39.9度、东经115.8度)发生2.7级地震，震源深度0公里。据中国地震局消息，4月19日1时10分在北京房山区(塌陷)(北纬39.9度、东经115.8度)发生2.7级地震，震源深度0公里。据中国地震局消息，4月19日1时10分在北京房山区(塌陷)(北纬39.9度、东经115.8度)发生2.7级地震，震源深度0公里。据中国地震局消息，4月19日1时10分在北京房山区(塌陷)(北纬39.9度、东经115.8度)发生2.7级地震，震源深度0公里。据中国地震局消息，4月19日1时10分在北京房山区(塌陷)(北纬39.9度、东经115.8度)发生2.7级地震，震源深度0公里。据中国地震局消息，4月19日1时10分在北京房山区(塌陷)(北纬39.9度、东经115.8度)发生2.7级地震，震源深度0公里。"
     
@@ -130,7 +130,7 @@ class detailViewController: UIViewController {
         scrollView.addSubview(detailLabel)
         
         storyHeadLabel = UILabel(frame: CGRectMake(5, detailLabel.frame.maxY + 10, screenW - 10, 21))
-        storyHeadLabel.text = "摊贩故事"
+        storyHeadLabel.text = "xx故事"
         storyHeadLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 13)
         storyHeadLabel.textColor = UIColor.colorFromRGB(0xFF6A6A, alpha: 1)
         scrollView.addSubview(storyHeadLabel)
