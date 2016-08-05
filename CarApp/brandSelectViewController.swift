@@ -33,9 +33,23 @@ class brandSelectViewController: UITableViewController {
     let Y = ["一汽", "英菲尼迪"]
     let Z = ["中华", "众泰"]
     
+    var cars: [[String]]!
+    
+    
+    @IBAction func searchButtonTapped(sender: AnyObject) {
+//        tableView.setContentOffset(CGPointMake(0, -5), animated: true)
+
+    }
+    @IBAction func close(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.contentOffset = CGPoint(x: 0, y: 44)
+        
+        cars = [A,B,C,D,F,G,H,J,K,L,M,N,O,P,Q,R,S,T,W,X,Y,Z]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -46,69 +60,17 @@ class brandSelectViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 22
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        switch section {
-        case 0:
-            return A.count
-        case 1:
-            return B.count
-        case 2:
-            return C.count
-        case 3:
-            return D.count
-        case 4:
-            return F.count
-        case 5:
-            return C.count
-        case 6:
-            return G.count
-        case 7:
-            return H.count
-        case 8:
-            return J.count
-        case 9:
-            return K.count
-        case 10:
-            return L.count
-        case 11:
-            return M.count
-        case 12:
-            return N.count
-        case 13:
-            return O.count
-        case 14:
-            return P.count
-        case 15:
-            return Q.count
-        case 16:
-            return R.count
-        case 17:
-            return S.count
-        case 18:
-            return T.count
-        case 19:
-            return W.count
-        case 20:
-            return X.count
-        case 21:
-            return Y.count
-        case 22:
-            return Z.count
-        default:
-            break
-        }
-        return 0
+        return cars[section].count
     }
 
     
@@ -118,69 +80,13 @@ class brandSelectViewController: UITableViewController {
         let textLabel = cell.viewWithTag(1001) as! UILabel
         let imageView = cell.viewWithTag(1000) as! UIImageView
         
-        textLabel.text = getCarName(indexPath)
-        imageView.image = UIImage(named: getCarName(indexPath))
-        
+        textLabel.text = cars[indexPath.section][indexPath.row]
+        imageView.image = UIImage(named: cars[indexPath.section][indexPath.row])
 
-        // Configure the cell...
 
         return cell
     }
     
-    func getCarName(indexPath: NSIndexPath) -> String {
-        switch indexPath.section {
-        case 0:
-            return A[indexPath.row]
-        case 1:
-            return B[indexPath.row]
-        case 2:
-            return C[indexPath.row]
-        case 3:
-            return D[indexPath.row]
-        case 4:
-            return F[indexPath.row]
-        case 5:
-            return C[indexPath.row]
-        case 6:
-            return G[indexPath.row]
-        case 7:
-            return H[indexPath.row]
-        case 8:
-            return J[indexPath.row]
-        case 9:
-            return K[indexPath.row]
-        case 10:
-            return L[indexPath.row]
-        case 11:
-            return M[indexPath.row]
-        case 12:
-            return N[indexPath.row]
-        case 13:
-            return O[indexPath.row]
-        case 14:
-            return P[indexPath.row]
-        case 15:
-            return Q[indexPath.row]
-        case 16:
-            return R[indexPath.row]
-        case 17:
-            return S[indexPath.row]
-        case 18:
-            return T[indexPath.row]
-        case 19:
-            return W[indexPath.row]
-        case 20:
-            return X[indexPath.row]
-        case 21:
-            return Y[indexPath.row]
-        case 22:
-            return Z[indexPath.row]
-        default:
-            return ""
-        }
-        
-    }
- 
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:

@@ -25,7 +25,7 @@ class settingsViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
-        self.navigationController!.navigationBar.barTintColor = UIColor.colorFromRGB(0xFF6A6A, alpha: 1) //0x4A90E2
+        self.navigationController!.navigationBar.barTintColor = UIColor.colorFromRGB(0x4A90E2, alpha: 1) //  0xFF6A6A
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         
         let titleLabel = UILabel(frame: CGRectMake(0, 0, 100, 44))
@@ -211,15 +211,17 @@ extension settingsViewController: UITableViewDataSource{
                 labelCellLabel.text = gestruePasswordLabelText
                 return labelCell
             case 2:
-                //打卡记录刷新开关
-                let switchCell = tableView.dequeueReusableCellWithIdentifier("switchCell")!
-                let switchCellLabel = switchCell.viewWithTag(1001) as! UILabel
-                let switchCellSwitch = switchCell.viewWithTag(1002) as! UISwitch
-                let refreshStaffHistory = NSUserDefaults.standardUserDefaults().boolForKey("refreshStaffHistory")
-                switchCellSwitch.setOn(refreshStaffHistory, animated: false)
-                switchCellSwitch.addTarget(self, action: #selector(settingsViewController.refreshStaffHistorySetting(_:)), forControlEvents: UIControlEvents.ValueChanged)
-                switchCellLabel.text = "提示新的打卡记录"
-                return switchCell
+                //更换车型
+                labelCellLabel.text = "更换车型"
+                return labelCell
+//                let switchCell = tableView.dequeueReusableCellWithIdentifier("switchCell")!
+//                let switchCellLabel = switchCell.viewWithTag(1001) as! UILabel
+//                let switchCellSwitch = switchCell.viewWithTag(1002) as! UISwitch
+//                let refreshStaffHistory = NSUserDefaults.standardUserDefaults().boolForKey("refreshStaffHistory")
+//                switchCellSwitch.setOn(refreshStaffHistory, animated: false)
+//                switchCellSwitch.addTarget(self, action: #selector(settingsViewController.refreshStaffHistorySetting(_:)), forControlEvents: UIControlEvents.ValueChanged)
+//                switchCellLabel.text = "提示新的打卡记录"
+//                return switchCell
             default:
                 break
             }
@@ -308,8 +310,10 @@ extension settingsViewController: UITableViewDelegate{
                 //changeGesturePassword()
                 break
             case 2:
-                //打卡刷新设置
-                print("打卡刷新设置")
+                //更换车型
+                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                let brandSelectViewController = storyboard.instantiateViewControllerWithIdentifier("brandSelectViewController")
+                self.presentViewController(brandSelectViewController, animated: true, completion: nil)
             default:
                 break
             }

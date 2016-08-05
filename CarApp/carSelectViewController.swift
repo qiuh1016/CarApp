@@ -14,6 +14,11 @@ class carSelectViewController: UITableViewController {
     let yiqidazhong    = ["捷达", "宝来", "高尔夫", "速腾", "迈腾", "CC"]
     let jinkoudazhong  = ["甲壳虫", "辉腾", "Tiguan", "途锐", "夏朗", "尚酷", "迈特威", "凯路威"]
 
+    
+    @IBAction func close(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -89,6 +94,11 @@ class carSelectViewController: UITableViewController {
  
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let okHandler = {(action: UIAlertAction!) -> Void in
+            NSUserDefaults.standardUserDefaults().setObject("途观", forKey: "car")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        alertView("确定选用此车型？", message: nil, okActionTitle: "确定", cancleActionTitle: "取消", okHandler: okHandler, viewController: self)
     }
 
     /*

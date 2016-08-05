@@ -16,7 +16,7 @@ class searchViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
-        self.navigationController!.navigationBar.barTintColor = UIColor.colorFromRGB(0xFF6A6A, alpha: 1) //0x4A90E2
+        self.navigationController!.navigationBar.barTintColor = UIColor.colorFromRGB(0x4A90E2, alpha: 1) //  0xFF6A6A
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         let titleLabel = UILabel(frame: CGRectMake(0, 0, 100, 44))
         titleLabel.backgroundColor = UIColor.clearColor()
