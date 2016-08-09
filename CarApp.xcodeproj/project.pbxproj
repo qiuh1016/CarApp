@@ -21,6 +21,7 @@
 		B9838B091CC473A2000C95B9 /* favorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9838B081CC473A2000C95B9 /* favorCell.swift */; };
 		B9838B0B1CC48648000C95B9 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9838B0A1CC48648000C95B9 /* searchViewController.swift */; };
 		B9838B0D1CC4881B000C95B9 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9838B0C1CC4881B000C95B9 /* detailViewController.swift */; };
+		B98521DA1D58598500213C43 /* mineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98521D91D58598500213C43 /* mineViewController.swift */; };
 		B997C53A1CBFA7A500BB4462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997C5391CBFA7A500BB4462 /* AppDelegate.swift */; };
 		B997C53C1CBFA7A500BB4462 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997C53B1CBFA7A500BB4462 /* mainViewController.swift */; };
 		B997C53F1CBFA7A500BB4462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B997C53D1CBFA7A500BB4462 /* Main.storyboard */; };
@@ -29,7 +30,6 @@
 		B997C5511CBFA88000BB4462 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997C5501CBFA88000BB4462 /* Functions.swift */; };
 		B997C55B1CBFC00500BB4462 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B997C55A1CBFC00500BB4462 /* SWRevealViewController.m */; };
 		B997C5631CBFDFC100BB4462 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997C5621CBFDFC100BB4462 /* menuViewController.swift */; };
-		B997C5651CBFE4A800BB4462 /* mineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997C5641CBFE4A800BB4462 /* mineViewController.swift */; };
 		B997C5671CBFE5F200BB4462 /* aboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997C5661CBFE5F200BB4462 /* aboutViewController.swift */; };
 		B997C56B1CBFE83900BB4462 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997C56A1CBFE83900BB4462 /* settingsViewController.swift */; };
 		B997C56D1CBFE88C00BB4462 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997C56C1CBFE88C00BB4462 /* HudView.swift */; };
@@ -60,6 +60,7 @@
 		B9838B0A1CC48648000C95B9 /* searchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
 		B9838B0C1CC4881B000C95B9 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		B9838B391CC4BB63000C95B9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B98521D91D58598500213C43 /* mineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mineViewController.swift; sourceTree = "<group>"; };
 		B997C5361CBFA7A500BB4462 /* CarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B997C5391CBFA7A500BB4462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B997C53B1CBFA7A500BB4462 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		B997C5591CBFC00500BB4462 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		B997C55A1CBFC00500BB4462 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B997C5621CBFDFC100BB4462 /* menuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
-		B997C5641CBFE4A800BB4462 /* mineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mineViewController.swift; sourceTree = "<group>"; };
 		B997C5661CBFE5F200BB4462 /* aboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutViewController.swift; sourceTree = "<group>"; };
 		B997C56A1CBFE83900BB4462 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		B997C56C1CBFE88C00BB4462 /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				B95867641CC5DBC4005B3A87 /* UserViewController.swift */,
-				B997C5641CBFE4A800BB4462 /* mineViewController.swift */,
 				B95867561CC5D87E005B3A87 /* UserCollectionViewCell.swift */,
 				B95867571CC5D87E005B3A87 /* UserCollectionViewCell.xib */,
 				B95867581CC5D87E005B3A87 /* CustomColors.swift */,
@@ -200,6 +199,7 @@
 				B997C56A1CBFE83900BB4462 /* settingsViewController.swift */,
 				B997C5661CBFE5F200BB4462 /* aboutViewController.swift */,
 				B997C5621CBFDFC100BB4462 /* menuViewController.swift */,
+				B98521D91D58598500213C43 /* mineViewController.swift */,
 				B95867551CC5D7E2005B3A87 /* mineView */,
 				B9838B0A1CC48648000C95B9 /* searchViewController.swift */,
 				B9838B0C1CC4881B000C95B9 /* detailViewController.swift */,
@@ -356,7 +356,6 @@
 				B95867651CC5DBC4005B3A87 /* UserViewController.swift in Sources */,
 				B9F76B431D53438A00C1B2F6 /* carSelectViewController.swift in Sources */,
 				B997C53A1CBFA7A500BB4462 /* AppDelegate.swift in Sources */,
-				B997C5651CBFE4A800BB4462 /* mineViewController.swift in Sources */,
 				B958675C1CC5D87E005B3A87 /* UserCollectionViewCell.swift in Sources */,
 				B958675E1CC5D87E005B3A87 /* CustomColors.swift in Sources */,
 				B997C56D1CBFE88C00BB4462 /* HudView.swift in Sources */,
@@ -365,6 +364,7 @@
 				B997C56B1CBFE83900BB4462 /* settingsViewController.swift in Sources */,
 				B95867631CC5D886005B3A87 /* CellInterface.swift in Sources */,
 				B95867601CC5D87E005B3A87 /* User.swift in Sources */,
+				B98521DA1D58598500213C43 /* mineViewController.swift in Sources */,
 				B997C5671CBFE5F200BB4462 /* aboutViewController.swift in Sources */,
 				B91B1A101D51776C007BC01B /* CarApp.xcdatamodeld in Sources */,
 				B997C5511CBFA88000BB4462 /* Functions.swift in Sources */,
