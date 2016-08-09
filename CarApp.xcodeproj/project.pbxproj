@@ -18,6 +18,7 @@
 		B95867611CC5D87E005B3A87 /* UserDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B958675B1CC5D87E005B3A87 /* UserDataProvider.swift */; };
 		B95867631CC5D886005B3A87 /* CellInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95867621CC5D886005B3A87 /* CellInterface.swift */; };
 		B95867651CC5DBC4005B3A87 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95867641CC5DBC4005B3A87 /* UserViewController.swift */; };
+		B980C4091D5A18BF00A6844C /* troubleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980C4081D5A18BF00A6844C /* troubleViewController.swift */; };
 		B9838B091CC473A2000C95B9 /* favorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9838B081CC473A2000C95B9 /* favorCell.swift */; };
 		B9838B0B1CC48648000C95B9 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9838B0A1CC48648000C95B9 /* searchViewController.swift */; };
 		B9838B0D1CC4881B000C95B9 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9838B0C1CC4881B000C95B9 /* detailViewController.swift */; };
@@ -56,6 +57,7 @@
 		B95867621CC5D886005B3A87 /* CellInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellInterface.swift; sourceTree = "<group>"; };
 		B95867641CC5DBC4005B3A87 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		B976E95F1D51750900BD266F /* CarApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CarApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		B980C4081D5A18BF00A6844C /* troubleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = troubleViewController.swift; sourceTree = "<group>"; };
 		B9838B081CC473A2000C95B9 /* favorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = favorCell.swift; sourceTree = "<group>"; };
 		B9838B0A1CC48648000C95B9 /* searchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
 		B9838B0C1CC4881B000C95B9 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				B9F76B421D53438A00C1B2F6 /* carSelectViewController.swift */,
 				B997C56A1CBFE83900BB4462 /* settingsViewController.swift */,
 				B997C5661CBFE5F200BB4462 /* aboutViewController.swift */,
+				B980C4081D5A18BF00A6844C /* troubleViewController.swift */,
 				B997C5621CBFDFC100BB4462 /* menuViewController.swift */,
 				B98521D91D58598500213C43 /* mineViewController.swift */,
 				B95867551CC5D7E2005B3A87 /* mineView */,
@@ -364,6 +367,7 @@
 				B997C56B1CBFE83900BB4462 /* settingsViewController.swift in Sources */,
 				B95867631CC5D886005B3A87 /* CellInterface.swift in Sources */,
 				B95867601CC5D87E005B3A87 /* User.swift in Sources */,
+				B980C4091D5A18BF00A6844C /* troubleViewController.swift in Sources */,
 				B98521DA1D58598500213C43 /* mineViewController.swift in Sources */,
 				B997C5671CBFE5F200BB4462 /* aboutViewController.swift in Sources */,
 				B91B1A101D51776C007BC01B /* CarApp.xcdatamodeld in Sources */,
